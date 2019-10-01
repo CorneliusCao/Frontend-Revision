@@ -1,0 +1,47 @@
+/* 
+    float: left, right;
+        + thường dùng để chia cột, nhưng nó có rất nhiều nhược điểm
+        + thằng cha bên ngoài cũng có tính chất không nhìn thấy được thằng con
+        + chúng ta phải thêm 1 cái div clear ở cuối thằng float cuối cùng
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    padding: 100px;
+}
+
+.float .item {
+    float: left;
+    width: 25%;
+    margin-bottom: 20px;
+}
+
+.item:nth-child(even) {
+    background-color: red;
+}
+
+.item:nth-child(odd) {
+    background-color: violet;
+}
+
+.item::first-letter {
+    font-size: 25px;
+}
+
+.clear {
+    clear: both;
+}
+
