@@ -1,0 +1,176 @@
+/*
+	Display có 2 dạng
+		+inline
+		+block
+			- không được ứng dụng để chia column
+			- chiều rộng mặc định của một khối có tính chất block => 100% so với thằng cha
+			- bất kể chiều rộng là bao nhiêu thì nó luôn đứng một mình trên một hàng
+			- Đối với phần tử có tính chất display block
+				* left : mặc định;
+				* center: margin-left, right auto;
+				* right: margin-right: 0 margin-left: auto;
+		+inline-block
+			- chiều rộng mặc định phụ thuộc vào nội dung bên trong
+			- có thể ứng dụng inline-block để chia column. Khắc phục được nhược điểm của thằng float
+			- căn dòng theo chiều dọc -> dùng vertical align -> so với đường cơ sở của phần tử có chiều cao lớn nhất
+				+ top: vertical-align: top;
+				+ bottom: vertical-align: bottom;
+				+ middle: vertical-align: middle;
+			- căn dòng theo chiều ngang (xem những thằng inline-block như là một chữ cái muốn căn dòng ngang ta xài text-align cho thằng cha của thằng inline-block)
+				* left: mặc định;
+				* right: text-align: right (father);
+				* center: text-align: center (father);
+
+	Vị trí của một phần tử hiển thị trong trang web
+		+ Theo chiều ngang
+			- left
+			- right
+			- center
+		+ Theo chiều dọc
+			- top
+			- bottom
+			- middle
+*/
+* {
+	padding   : 0;
+	margin    : 0;
+	box-sizing: border-box;
+}
+
+ul {
+	list-style-type: none;
+}
+
+a {
+	text-decoration: none;
+}
+
+/*p {
+	background-color: blue;
+}*/
+
+span {
+	background-color: yellow;
+}
+
+.text-center {
+	text-align: center;
+	margin-bottom: 25px;
+	margin-top: 25px;
+}
+
+.block {
+	height          : 100px;
+	width           : 100px;
+	background-color: red;
+}
+
+.left {
+	margin-right: auto;
+	margin-left : 0;
+}
+
+.right {
+	margin-right: 0;
+	margin-left : auto;
+}
+
+.center {
+	margin-left : auto;
+	margin-right: auto;
+}
+
+.inline-block {
+	font-size: 0px;
+}
+
+
+.inline-block .item {
+	width         : 25%;
+	margin-bottom : 25px;
+	display       : inline-block;
+	font-size     : 16px;
+}
+
+.inline-block .item:nth-child(even) {
+	background-color: red;
+}
+
+.inline-block .item:first-letter {
+	font-size: 25px;
+}
+
+.inline-block .item:nth-child(odd) {
+	background-color: violet;
+}
+
+
+.va-t .item {
+	vertical-align: top;
+}
+
+.va-m .item {
+	vertical-align: middle;
+}
+
+.va-b .item {
+	vertical-align: bottom;
+}
+
+.left, .right, .center {
+	background-color: lightgray;
+}
+
+.left {
+	text-align: left;
+}
+
+.right {
+	text-align: right;
+}
+
+.center {
+	text-align: center;
+}
+
+.inline-block-1 {
+	height          : 150px;
+	width           : 150px;
+	display         : inline-block;
+	background-color: violet;
+}
+
+.container {
+	font-size: 0px;
+	width: 700px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.left-content, .right-content {
+	display: inline-block;
+	font-size: 16px;
+}
+
+.left-content {
+	vertical-align: middle;
+	width: 30%;
+}
+
+.left-content img {
+	padding-right: 20px;
+	width: 100%;
+}
+
+.right-content {
+	vertical-align: middle;
+	width: 70%;
+}
+
+.right-content h2 {
+	font-weight: lighter;
+}
+
+.right-content p {
+	margin-top: 25px;
+}

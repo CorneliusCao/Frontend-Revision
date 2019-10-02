@@ -1,0 +1,93 @@
+* {
+	margin    : 0;
+	padding   : 0;
+	box-sizing: border-box;
+}
+
+.container {
+	width : 700px;
+	margin: 0 auto;
+}
+
+.header {
+	background-color: #E2E2E2;
+}
+
+.header h1 {
+	padding: 7px 10px;
+}
+
+.nav {
+	font-size       : 0;
+	padding-left    : 10px;
+	background-color: #C6A7A5;
+}
+
+.nav ul li {
+	list-style-type: none;
+	display        : inline-block;
+	margin-right   : 15px;
+}
+
+.nav ul li a {
+	display  : block;
+	font-size: 16px;
+	color    : blue;
+	padding: 5px 0px;
+}
+
+main {
+	font-size: 0;
+	overflow : hidden;
+}
+
+.column1 {
+	width           : 70%;
+	background-color: #B1CFA8;
+	vertical-align  : top;
+}
+
+.column2 {
+	width           : 30%;
+	background-color: #A5A6CE;
+	vertical-align  : top;
+}
+
+.column1, .column2 {
+	display       : inline-block;
+	font-size     : 16px;
+	padding-bottom: 9999px;
+	margin-bottom : -9999px;
+}
+
+.column1 h2, .column2 h2 {
+	padding: 10px 10px;
+}
+
+.column1 a {
+	display       : block;
+	padding-left  : 10px;
+	padding-bottom: 15px;
+}
+
+.column1 p {
+	margin-bottom: 25px;
+	padding-left : 10px;
+}
+
+.column2 nav {
+	padding-left: 50px;
+}
+
+.column2 p {
+	margin-bottom: 25px;
+	padding-left : 10px;
+}
+
+.footer {
+	background-color: #D1D0A6;
+}
+
+.footer p {
+	padding: 5px 10px;
+}

@@ -3,8 +3,9 @@
         + thường dùng để chia cột, nhưng nó có rất nhiều nhược điểm
         + thằng cha bên ngoài cũng có tính chất không nhìn thấy được thằng con
         + chúng ta phải thêm 1 cái div clear ở cuối thằng float cuối cùng
-*/
-
+    Nhược điểm của float: Chỉ ứng dụng chia column cho những layout có chiều cao bằng nhau.
+    Nếu như không chắc chắn được height của những phần từ bên trong thì không nên dùng float ;
+    */
 * {
     margin: 0;
     padding: 0;
@@ -45,3 +46,14 @@ body {
     clear: both;
 }
 
+.menu ul li {
+    float: left;
+}
+
+.menu .left {
+    float: left;
+}
+
+.menu .right {
+    float: right;
+}
