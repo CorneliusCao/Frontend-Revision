@@ -1,0 +1,133 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:before, :after {
+    box-sizing: border-box;
+}
+
+a, span, :before, :after {
+    display: inline-block;
+}
+
+:focus {
+    outline: none;
+}
+
+body {
+    font-weight: 400;
+    font-size: 14px;
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.285;
+    color: #323232;
+    background-image: url('../Images/bg.png');
+}
+
+.container {
+    width: 1170px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.top-header {
+    font-size     : 13px;
+    color         : #0c8597;
+    font-weight   : 500;
+    text-transform: uppercase;
+    padding-top   : 12px;
+    padding-bottom: 12px;
+    border-bottom : 1px solid #e9e9e9;
+}
+
+.row {
+    font-size: 0px;
+    margin-left: -15px;
+    margin-right: -15px;
+}
+
+.row [class*="col-"] {
+    display      : inline-block;
+    padding-left : 15px;
+    padding-right: 15px;
+    vertical-align: top;
+}
+
+.va-m [class*="col-"] {
+    vertical-align: middle;
+}
+
+.col-9 {
+    width: 75%;
+}
+
+.col-3 {
+    width: 25%;
+}
+
+.header .logo {
+    width: 130px;
+}
+
+.header .hotline {
+    width: calc(100% - 130px);
+    text-align: right;
+}
+
+.header .logo, .header .hotline {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.header .hotline img {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.contact {
+    font-size: 16px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.red-text {
+    color      : #f9100b;
+    font-size  : 22px;
+    font-weight: 700;
+}
+
+.input-group input {
+    border: 1px solid #f8f8f8;
+    height: 35px;
+    padding: 0 40px 0px 15px;
+    width: 100%;
+    border-radius: 5px;
+    font-size: 14px;
+    color: #999;
+    -webkit-transition: all .3s;
+    -o-transition: all .3s;
+    transition: all .3s;
+}
+
+.input-group input:focus {
+    border-color: #0c8597;
+}
+
+.input-group {
+    position: relative;
+}
+
+.input-group .icons {
+    position: absolute;
+    font-size: 15px;
+    color: #999;
+    right: 13px;
+    top: 10px;
+}
+
+
+
+
+
+
